@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://see-energy.co.uk/sitemap.xml
