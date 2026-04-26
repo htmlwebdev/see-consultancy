@@ -170,8 +170,8 @@ Pure cosmetic refresh — same nav, same footer, same colour variables.
 
 ## 6. Things explicitly **out of scope** for this preview
 
-1. **Real photography** — we use placeholder boxes for team photos and hero imagery. The writeup says "for images visit unsplash.com" — that's a follow-up task once the client picks shots.
-2. **Final logo asset** — keeping current `favicon/header-logo.png` until a high-res version is supplied.
+1. **Real photography** — hero and "visual" split-blocks use Unsplash URLs (already wired in CSS). Team photos (`raj-srivastava.jpg`, `dilip-jena.jpg`, `vikas-kooneti.jpg`) are now real assets in `preview/images/` — these replaced the original placeholder-initials approach.
+2. **Final logo asset** — SVG logo (`preview/images/see-logo.svg`) is live in the header. Falls back to `../favicon/header-logo.png` if SVG fails to load.
 3. **Form back-end** — the contact form posts to the same handler the live site uses; nothing in the preview changes that.
 4. **Custom font** — pending client decision.
 5. **Partner logos** on the home page — removed until real partners are confirmed.
@@ -211,3 +211,69 @@ Once the client approves the preview:
 5. Commit, push to `main`, GitHub Pages auto-deploys.
 
 If you switch to Cloudflare Pages mid-flight, see `HOSTING.md` §3 — it's a one-time `wrangler pages project create` and points at the same Git repo.
+
+---
+
+## 9. Implementation status & deviations from source documents
+
+**Last updated:** April 2026
+
+### 9.1 What's done
+
+| Item | Status | Notes |
+| --- | --- | --- |
+| Brand palette (`css/see-theme.css`) | ✅ Done | All 10 colour variables live; overrides Bootstrap/style.css throughout |
+| Compact sticky header | ✅ Done | Single-bar layout with logo, nav links, "Contact us" CTA button |
+| Mobile nav (hamburger) | ✅ Done | Animated 3-bar → X toggle; slides open below header |
+| `index.html` | ✅ Done | Hero, About SEE split, What We Do split, Capabilities cards, CTA strip, footer |
+| `about.html` | ✅ Done | Our Story, Our Clients (11 tiles), Our Team (3 cards), Our Approach + pill list, Testimonials |
+| `services.html` | ✅ Done | Consultancy (12 cards) + Training (6 cards), each with 4 bullets |
+| `expertise.html` | ✅ Done | 9 alternating expertise rows (8 original pillars + Executive Training as a full pillar) |
+| `contact.html` | ✅ Done | "Why choose us" panel (5 bullets), form, LinkedIn & email cards |
+| `privacy-policy.html` | ✅ Done | Style refresh only |
+| `terms-of-service.html` | ✅ Done | Style refresh only |
+| `404.html` | ✅ Done | Style refresh only |
+| SEO meta tags | ✅ Done | Full suite on all pages — see §9.3 below |
+| Team photos | ✅ Done | Real images (`raj-srivastava.jpg`, `dilip-jena.jpg`, `vikas-kooneti.jpg`) in `preview/images/` |
+| Testimonials | ⏸ Pending greenlight | HTML is fully built in `about.html`; section is live in the preview but **not promoted to production** until client confirms the quotes are accurate and authorised |
+
+### 9.2 UI choices that differ from the PPT / Word doc
+
+The following are **intentional deviations** made during build, not oversights. All are open for feedback.
+
+1. **Home — "Where we add value" capability cards (new section)**
+   The original designs showed Hero → About SEE → What We Do → Footer with no capability preview on the home page. A third section was added with 6 feature cards ("Energy Economics & Project Evaluation", "Market Research & Price Forecasting", "Strategy M&A & Commercial Advisory", "Renewables & Energy Transition", "Data Analytics & Digital Tools", "Executive Training") plus a dark "Have a project on the table?" CTA strip above the footer. Rationale: a home page that immediately signals the firm's range without forcing visitors to click through to Services first. Can be removed or collapsed if the client prefers a cleaner scroll.
+
+2. **Home — "Talk to us" ghost button (secondary CTA)**
+   The design doc specified "Contact Us" as the secondary hero button. Changed to "Talk to us" to be less transactional alongside "Our Services". Easy to revert.
+
+3. **Home — "What we do" copy expanded**
+   Added "— covering upstream, midstream, LNG, power, renewables, and the energy transition" to the sub-text. Not in the original draft but makes the scope explicit.
+
+4. **About — section heading copy**
+   The About SEE block headline reads "Bridging industry experience with advanced analytics" rather than the generic "About SEE" H2 in the mock-up. Feels less placeholder-y; reverts to original on request.
+
+5. **Expertise — 9 pillars, not 8**
+   The design doc listed 8 pillars with "Executive Training & Capability Building" as a parenthetical 9th. The build treats it as a full, equal pillar because it represents a distinct revenue line. The page title also reads "Nine Energy Pillars" in the SEO. Can be collapsed back to 8 if preferred.
+
+6. **Testimonials — present but on hold**
+   Testimonials are fully built in `about.html`. They are visible in the preview but will not go live until Raj confirms the quotes, names and titles are accurate and that the individuals have consented to being cited publicly.
+
+7. **Team cards — real photos used**
+   The original plan was initials-placeholder for team cards. Actual photos were added to `preview/images/`. If any photo needs replacing or cropping, swap the file and the `<img src="">` in `about.html`.
+
+### 9.3 SEO additions (not in original scope)
+
+Every page now has a complete SEO head block:
+
+- **Primary meta tags** — `<title>`, `<meta name="description">`, `<meta name="keywords">`, `author`, `publisher`, `copyright`, `robots`, `canonical`, `geo.region`, `geo.placename`
+- **Open Graph** — `og:type`, `og:title`, `og:description`, `og:url`, `og:image` (1200×630, pointing to `see-og-image.jpg`), `og:image:alt`, `og:locale`, `og:site_name`
+- **Twitter / X Card** — `summary_large_image` card with title, description, image
+- **Browser / PWA** — `theme-color`, `msapplication-TileColor`, `format-detection`
+- **JSON-LD structured data** — `Organization`, `WebSite`, `WebPage` (or `AboutPage` / `ItemPage`) graph on every page; `index.html` includes full `hasOfferCatalog`; `about.html` includes `employee` Person nodes for all three team members and three `Review` nodes for testimonials
+
+**Still needed before go-live:**
+
+- Create `images/see-og-image.jpg` (1200×630 hero image) at the repo root
+- Confirm all canonical URLs resolve on the live domain
+- Submit updated `sitemap.xml` (with `expertise.html` added) to Google Search Console
