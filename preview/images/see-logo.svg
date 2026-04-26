@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 110" role="img" aria-label="Simplify Energy Economics">
+  <title>Simplify Energy Economics</title>
+  <!-- Eye / data glyph -->
+  <g fill="none" stroke="#255951" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
+    <!-- top right data lines -->
+    <path d="M70 16 H100"/>
+    <path d="M76 28 H100"/>
+    <path d="M82 40 H100"/>
+    <!-- bottom left data lines -->
+    <path d="M10 70 H40"/>
+    <path d="M10 82 H34"/>
+    <path d="M10 94 H28"/>
+    <!-- eye outline (almond) -->
+    <path d="M14 55 C32 28, 80 28, 100 55 C82 82, 32 82, 14 55 Z"/>
+    <!-- iris -->
+    <circle cx="56" cy="55" r="16" stroke-width="6"/>
+    <!-- rising line / lightning inside iris -->
+    <path d="M48 60 L54 53 L60 58 L66 50" stroke-width="5"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g font-family="'Roboto Condensed', 'Helvetica Neue', Arial, sans-serif" font-weight="700" fill="#255951">
+    <text x="120" y="52" font-size="28" letter-spacing="0.5">Simplify Energy</text>
+    <text x="120" y="86" font-size="28" letter-spacing="0.5">Economics</text>
+  </g>
+</svg>
