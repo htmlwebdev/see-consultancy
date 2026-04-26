@@ -481,6 +481,12 @@ header .row.logo-top-info { margin: 0 !important; display: none; }   /* hide the
     box-shadow: 0 4px 18px rgba(0,0,0,.06);
     position: relative;
     margin-bottom: 30px;
+    transition: all .3s ease;
+}
+.see-testimonial:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(37,89,81,.12);
+    border-color: var(--see-primary-light);
 }
 .see-testimonial::before {
     content: "\201C";
@@ -625,6 +631,21 @@ header .row.logo-top-info { margin: 0 !important; display: none; }   /* hide the
     .see-expertise-row { padding: 30px 0; gap: 24px; }
     .see-expertise-row .num { flex: 0 0 90px; height: 90px; font-size: 36px; }
     .see-section.dark .container { flex-direction: column; text-align: center; }
+
+    /* Team cards and testimonials: add gap between stacked columns on mobile */
+    .row:has(> [class*="col-"] > .see-team-card) > [class*="col-"],
+    .row:has(> [class*="col-"] > .see-testimonial) > [class*="col-"] {
+        margin-bottom: 28px;
+    }
+    .row:has(> [class*="col-"] > .see-team-card) > [class*="col-"]:last-child,
+    .row:has(> [class*="col-"] > .see-testimonial) > [class*="col-"]:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Contact page: "Why choose us" column spacing from form on tablet/mobile */
+@media (max-width: 991px) {
+    .see-why-col { margin-top: 40px; }
 }
 
 /* tiny utility */
