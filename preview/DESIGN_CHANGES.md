@@ -277,3 +277,83 @@ Every page now has a complete SEO head block:
 - Create `images/see-og-image.jpg` (1200×630 hero image) at the repo root
 - Confirm all canonical URLs resolve on the live domain
 - Submit updated `sitemap.xml` (with `expertise.html` added) to Google Search Console
+
+---
+
+## 10. April 2026 update — V2 content + visual sharpening
+
+Round of changes driven by client review of `data/SEE Website Draft Content V2.pdf` and a follow-up note on visual quality. Each item below maps 1:1 to a red-highlighted change in the V2 PDF or to a direct client request.
+
+### 10.1 Copy changes from V2 PDF
+
+**`about.html` — Raj Srivastava bio (`#raj-srivastava` card and JSON-LD)**
+
+- Reworded experience description from *"market research, strategy development, financial modelling, and due diligence"* → *"valuation, modeling, strategy development, and due diligence"* (matches V2 PDF page 2).
+- Tightened the M&A advisory sentence: *"Before these roles, he worked in M&A advisory with Deloitte and CGG Robertson UK."*
+- Replaced the energy-transition sentence with *"Raj has also led workstreams in the energy-transition space."* and added the Symposium-2021 talk on its own sentence.
+- Added Warwick scholarship note: *"…which he completed on a scholarship…"*
+- Certifications list now ends in **ESG Investing** (was *Climate Finance*).
+- **NEW third paragraph** — community / yoga instructor / London Marathon 2025 / IIT & ISM alumni boards.
+
+**`expertise.html` — Pillar 5 (Market Research & Price Forecasting)**
+
+- Removed bullet *"Energy-transition commodities (lithium, nickel, copper) assessment"* (struck through in V2 PDF).
+- Added bullet *"Power markets & energy-transition dynamics"*.
+
+**`expertise.html` — Pillar 8 (Trading, Risk Management & Derivatives)**
+
+- Reworded *"Hedging frameworks for price, basis, and volume risk"* → *"Risk management & hedging programs across price, basis, and volume risk"* (matches V2 wording).
+
+### 10.2 Visual changes (client request)
+
+**Team photos no longer blurry (`about.html` + `css/see-theme.css`)**
+
+The source files in `preview/images/` are small (Raj 355×355, Dilip 200×200, Vikas 116×114). The previous CSS used `aspect-ratio: 1/1` on the photo block, which forced the images to fill the full card width (~360 px+ on desktop) and visibly upscaled them. The card layout now uses a **150×150 circular avatar** centred at the top of each card with a white border + soft shadow. The photos are no longer upscaled, so blur is gone. Body text below the avatar is centre-aligned for headings/role, left-aligned for the bio paragraphs.
+
+**Higher-contrast palette (`css/see-theme.css` `:root` variables)**
+
+The previous palette read as a bit washed out, especially against white sections. Each variable was deepened / saturated:
+
+| Variable | Old | New | Why |
+| --- | --- | --- | --- |
+| `--see-primary` | `#255951` | `#1A4A43` | deeper teal — stronger headings, buttons, links |
+| `--see-primary-dark` | `#4075AA` | `#2E5FA0` | richer steel blue accent |
+| `--see-primary-light` | `#86CFD6` | `#5FB8C2` | punchier hover/light accents |
+| `--see-secondary-l` | `#72C1E8` | `#2FA4DC` | saturated sky blue tag colour |
+| `--see-secondary-d` | `#7365A7` | `#5A4A99` | deeper purple divider |
+| `--see-alt-accent` | `#69009E` | `#7A00B5` | sharper CTA hover |
+| `--see-text` | `#1f2a30` | `#131c21` | darker primary copy |
+| `--see-body` | `#3a4750` | `#2b363e` | stronger body grey |
+| `--see-muted` | `#5b6770` | `#4a565f` | tighter muted contrast |
+| `--see-border` | `#e6eef0` | `#d8e3e6` | slightly stronger borders |
+| `--see-bg-soft` | `#EFFEFE` | `#E5F8F8` | a touch cooler / more visible |
+
+All other styling cascades through the variables, so the deepening propagates everywhere automatically. Brand identity stays the same — the colours are darker/more saturated versions of the same hues, not new colours.
+
+### 10.3 New section — Our Clients & Partners (`index.html`)
+
+A new section sits between **What we do** and **Where we add value** on the home page:
+
+1. **Heading** — "Our Clients & Partners" (with the kicker "Trust").
+2. **Intro paragraph** — *"We are proud to have served many companies across the globe as clients within a short period of time. We have also collaborated with select companies to provide integrated services when needed."* (verbatim from client note).
+3. **Moving logo banner** — `.see-marquee` strip with `.see-marquee-track` looping horizontally via CSS-only animation (`@keyframes see-marquee-slide`, 35s linear infinite, paused on hover). The track contains 8 logo slots duplicated for a seamless loop. Currently populated with `Client 1…5` / `Partner 1…3` placeholder tiles — **swap each `<span class="logo-placeholder">…</span>` for an `<img src="…">` once the client supplies the actual logo files** (drop them into `preview/images/clients/` and reference by relative path; CSS sizes them to 56 px tall, max 180 px wide, grayscale by default and full-colour on hover).
+4. **"Who we work with" banner** — full-width gradient panel below the marquee with the heading and a short blurb. Implemented as `.see-work-banner`.
+
+Marquee is mask-faded at the left and right edges so the loop seam is invisible, and the duplicated track means the animation can run indefinitely without snapping back.
+
+### 10.4 Files touched in this round
+
+```
+preview/about.html              — Raj bio rewrite (3 paragraphs) + JSON-LD description
+preview/expertise.html          — Pillar 5 bullet swap, Pillar 8 bullet rewording
+preview/index.html              — new Clients & Partners section (marquee + banner)
+preview/css/see-theme.css       — palette deepening, team-card avatar restyle,
+                                  marquee + work-banner components
+preview/DESIGN_CHANGES.md       — this section
+```
+
+### 10.5 Outstanding items for the client
+
+- Provide client/partner logo files (PNG or SVG, transparent background preferred) — placeholders in the marquee track will be replaced 1:1.
+- Confirm the new palette feels right against the existing logo (the request acknowledged the logo itself is muted; the site can run a slightly bolder palette around it).
+- Confirm the bio third-paragraph wording (community / marathon) is the final version.
