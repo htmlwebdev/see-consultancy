@@ -1,346 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- SEO Meta Tags - Privacy Policy -->
-    <meta name="description" content="SEE's Privacy Policy outlines how we collect, use, and protect your personal information. Learn about our commitment to data protection and privacy in energy sector consulting.">
-    <meta name="keywords" content="SEE privacy policy, data protection policy, energy consulting privacy, personal information protection">
-    <meta name="author" content="SEE">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Privacy Policy | SEE - Protecting Your Data">
-    <meta property="og:description" content="SEE's Privacy Policy outlines how we collect, use, and protect your personal information. Learn about our commitment to data protection and privacy in energy sector consulting.">
+
+    <!-- ===== Primary SEO ===== -->
+    <title>Privacy Policy | Simplify Energy Economics (SEE)</title>
+    <meta name="description" content="Simplify Energy Economics (SEE) Privacy Policy — how we collect, use, disclose and protect your personal data when you visit our website or engage our energy consultancy and training services. Governed by UK law.">
+    <meta name="author" content="Simplify Energy Economics (SEE)">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="geo.region" content="GB-SCT">
+    <link rel="canonical" href="https://see-energy.co.uk/privacy-policy.html">
+
+    <!-- ===== Open Graph ===== -->
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Simplify Energy Economics (SEE)">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:title" content="Privacy Policy | Simplify Energy Economics (SEE)">
+    <meta property="og:description" content="How Simplify Energy Economics collects, uses and protects your personal data.">
     <meta property="og:url" content="https://see-energy.co.uk/privacy-policy.html">
-    
-    <title>Privacy Policy | SEE - Protecting Your Data</title>
 
-    <!-- Favicon -->
-    <link rel="icon" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
-    <link rel="shortcut icon" href="favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="favicon/site.webmanifest" />
+    <!-- ===== Theme / Browser UI ===== -->
+    <meta name="theme-color" content="#255951">
+    <meta name="msapplication-TileColor" content="#255951">
+    <meta name="format-detection" content="telephone=no">
 
-    <!-- CSS imports remain the same -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-    <link href="css/style.css" rel="stylesheet">
-    
-    
+    <!-- ===== JSON-LD Structured Data ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://see-energy.co.uk/#organization",
+          "name": "Simplify Energy Economics",
+          "alternateName": "SEE",
+          "url": "https://see-energy.co.uk",
+          "email": "info@see-energy.co.uk"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://see-energy.co.uk/privacy-policy.html#webpage",
+          "url": "https://see-energy.co.uk/privacy-policy.html",
+          "name": "Privacy Policy | Simplify Energy Economics (SEE)",
+          "description": "How Simplify Energy Economics collects, uses and protects your personal data.",
+          "isPartOf": {"@id": "https://see-energy.co.uk/#website"},
+          "inLanguage": "en-GB",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://see-energy.co.uk/"},
+              {"@type": "ListItem", "position": 2, "name": "Privacy Policy", "item": "https://see-energy.co.uk/privacy-policy.html"}
+            ]
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="icon" href="../favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="css/see-theme.css" rel="stylesheet">
     <style>
-    .legal-content {
-        background: #ffffff;
-        padding: 40px;
-        border-radius: 8px;
-        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-        margin: 30px 0;
-    }
-
-    .legal-content h2 {
-        color: #333;
-        margin: 30px 0 20px;
-        font-size: 24px;
-    }
-
-    .legal-content h3 {
-        color: #444;
-        margin: 25px 0 15px;
-        font-size: 20px;
-    }
-
-    .legal-content p {
-        color: #666;
-        line-height: 1.8;
-        margin-bottom: 15px;
-    }
-
-    .legal-content ul {
-        margin-bottom: 20px;
-        padding-left: 20px;
-    }
-
-    .legal-content li {
-        color: #666;
-        line-height: 1.8;
-        margin-bottom: 10px;
-    }
-
-    .last-updated {
-        font-style: italic;
-        color: #888;
-        margin-top: 30px;
-    }
+        .legal-body { font-size: 15.5px; line-height: 1.75; color: var(--see-text); }
+        .legal-body h2 { margin-top: 36px; font-size: 22px; }
+        .legal-body h3 { font-size: 17px; color: var(--see-primary-dark); margin-top: 22px; }
+        .legal-body ul li { margin-bottom: 6px; }
     </style>
 </head>
-
-<body class="legal-pages">
-    <!-- Preloader -->
-    <div class="loader-wrapper">
-        <div class="sk-cube-grid">
-            <div class="sk-cube sk-cube1"></div>
-            <div class="sk-cube sk-cube2"></div>
-            <div class="sk-cube sk-cube3"></div>
-            <div class="sk-cube sk-cube4"></div>
-            <div class="sk-cube sk-cube5"></div>
-            <div class="sk-cube sk-cube6"></div>
-            <div class="sk-cube sk-cube7"></div>
-            <div class="sk-cube sk-cube8"></div>
-            <div class="sk-cube sk-cube9"></div>
-        </div>
-    </div>
-    
+<body class="legal">
     <div class="wrapper">
+
         <header>
             <div class="header-area">
-                <div class="row logo-top-info">
-                    <div class="container">
-                        <div class="col-md-3 logo">
-                            <!-- Main Logo - Comment: Need SEE logo here -->
-                            <a href="index.html"><img src="favicon/header-logo.png" alt="SEE Logo" /></a>
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                                <span class="sr-only">Main Menu</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        <div class="col-md-9 top-info-social">
-                            <div class="pull-right">
-                                <div class="top-info">
-                                    <div class="email">
-                                        <h3>EMAIL US</h3>
-                                        <p><a href="mailto:info@see-energy.co.uk">info@see-energy.co.uk</a></p>
-                                    </div>
-                                </div>
-                                <div class="social">
-                                    <ul class="social-icons">
-                                        <li><a href="https://www.linkedin.com/company/see-energy/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="see-topbar">
+                    <a class="see-brand" href="index.html">
+                        <img src="images/see-logo.svg" alt="Simplify Energy Economics" onerror="this.onerror=null;this.src='../favicon/header-logo.png';">
+                    </a>
+                    <button class="see-burger" type="button" aria-label="Toggle menu" onclick="document.getElementById('see-nav').classList.toggle('open')">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <ul class="see-nav main-menu" id="see-nav">
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="expertise.html">Our Expertise</a></li>
+                        <li class="see-cta-li"><a class="see-cta" href="contact.html">Contact us</a></li>
+                    </ul>
                 </div>
-
-                <!-- Navigation -->
-                <nav id="navbar" class="collapse navbar-collapse main-menu">
-                    <div class="container">
-                        <ul class="main-menu">
-                            <li ><a href="index.html">Home</a></li>
-                            <li ><a href="about.html">About Us</a></li>
-                            <li ><a href="services.html">Services</a></li>
-                            <li ><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
             </div>
         </header>
 
-    <main class="main">
-        <div class="page-title text-center">
-            <h1 class="title" style="color: white;">Privacy Policy</h1>
-            <p class="description light">Understanding how we protect and manage your data</p>
-        </div>
-
-        <div class="breadcrumbs">
+        <section class="see-page-title">
             <div class="container">
-                <span class="parent"><i class="fa fa-home"></i> <a href="index.html">Home</a></span>
-                <i class="fa fa-chevron-right"></i>
-                <span class="child">Privacy Policy</span>
+                <h1>Privacy Policy</h1>
+                <p class="crumb"><a href="index.html">Home</a> &nbsp;&rsaquo;&nbsp; Privacy Policy</p>
             </div>
-        </div>
+        </section>
 
-        <div class="container">
-            <div class="legal-content">
-                <h2>Introduction</h2>
-                <p>At SEE ("we," "our," or "us"), we are committed to protecting your privacy and personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or engage with our services.</p>
+        <section class="see-section">
+            <div class="container">
+                <div class="row"><div class="col-md-10 col-md-offset-1 legal-body">
+                    <h2>Introduction</h2>
+                    <p>At SEE ("we," "our," or "us"), we are committed to protecting your privacy and personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or engage with our services.</p>
 
-                <h2>Information We Collect</h2>
-                <h3>Personal Information</h3>
-                <p>We may collect personal information that you voluntarily provide, including but not limited to:</p>
-                <ul>
-                    <li>Name and contact information</li>
-                    <li>Email address</li>
-                    <li>Company name and position</li>
-                    <li>Professional background information</li>
-                </ul>
+                    <h2>Information We Collect</h2>
+                    <h3>Personal Information</h3>
+                    <p>We may collect personal information that you voluntarily provide, including but not limited to:</p>
+                    <ul>
+                        <li>Name and contact information</li>
+                        <li>Email address</li>
+                        <li>Company name and position</li>
+                        <li>Professional background information</li>
+                    </ul>
+                    <h3>Automatically Collected Information</h3>
+                    <p>When you visit our website, we may automatically collect certain information about your device, including:</p>
+                    <ul>
+                        <li>IP address</li>
+                        <li>Browser type</li>
+                        <li>Access times</li>
+                        <li>Pages viewed</li>
+                    </ul>
 
-                <h3>Automatically Collected Information</h3>
-                <p>When you visit our website, we may automatically collect certain information about your device, including:</p>
-                <ul>
-                    <li>IP address</li>
-                    <li>Browser type</li>
-                    <li>Access times</li>
-                    <li>Pages viewed</li>
-                </ul>
+                    <h2>How We Use Your Information</h2>
+                    <ul>
+                        <li>Providing and maintaining our services</li>
+                        <li>Responding to your inquiries</li>
+                        <li>Sending you relevant communications</li>
+                        <li>Improving our website and services</li>
+                        <li>Complying with legal obligations</li>
+                    </ul>
 
-                <h2>How We Use Your Information</h2>
-                <p>We use the collected information for various purposes, including:</p>
-                <ul>
-                    <li>Providing and maintaining our services</li>
-                    <li>Responding to your inquiries</li>
-                    <li>Sending you relevant communications</li>
-                    <li>Improving our website and services</li>
-                    <li>Complying with legal obligations</li>
-                </ul>
+                    <h2>Information Sharing</h2>
+                    <p>We do not sell or rent your personal information to third parties. We may share your information with:</p>
+                    <ul>
+                        <li>Service providers who assist in our operations</li>
+                        <li>Professional advisers</li>
+                        <li>Law-enforcement bodies when required by law</li>
+                    </ul>
 
-                <h2>Information Sharing</h2>
-                <p>We do not sell or rent your personal information to third parties. We may share your information with:</p>
-                <ul>
-                    <li>Service providers who assist in our operations</li>
-                    <li>Professional advisers</li>
-                    <li>Law enforcement when required by law</li>
-                </ul>
+                    <h2>Data Security</h2>
+                    <p>We implement appropriate security measures to protect your personal information. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
 
-                <h2>Data Security</h2>
-                <p>We implement appropriate security measures to protect your personal information. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+                    <h2>Your Rights</h2>
+                    <ul>
+                        <li>Access your personal information</li>
+                        <li>Correct inaccurate information</li>
+                        <li>Request deletion of your information</li>
+                        <li>Object to processing of your information</li>
+                        <li>Request data portability</li>
+                    </ul>
 
-                <h2>Your Rights</h2>
-                <p>You have the right to:</p>
-                <ul>
-                    <li>Access your personal information</li>
-                    <li>Correct inaccurate information</li>
-                    <li>Request deletion of your information</li>
-                    <li>Object to processing of your information</li>
-                    <li>Request data portability</li>
-                </ul>
+                    <h2>Contact Us</h2>
+                    <p>For any privacy-related questions or concerns, please contact us at <a href="mailto:info@see-energy.co.uk">info@see-energy.co.uk</a>.</p>
 
-                <h2>Contact Us</h2>
-                <p>For any privacy-related questions or concerns, please contact us at:</p>
-                <p>Email: <a href="mailto:info@see-energy.co.uk">info@see-energy.co.uk</a></p>
-
-                <p class="last-updated">Last Updated: November 11, 2024</p>
+                    <p style="margin-top: 30px; color: var(--see-muted); font-size: 14px;"><i>Last updated: April 2026</i></p>
+                </div></div>
             </div>
-        </div>
-    </main>
+        </section>
 
-        <!-- Footer Section -->
-        <footer>
-            <div class="footer">
-                <div class="container">
-                    <!-- Pre-footer Section -->
-                    <div class="row pre-footer">
-                        <div class="col-md-4">
-                            <div class="contact-box">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <div class="contact-details">
-                                    <h4 class="pre-footer-title">HEAD OFFICE</h4>
-                                    <p>Scotland, United Kingdom</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="contact-box">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                                <div class="contact-details">
-                                    <h4 class="pre-footer-title">EMAIL US</h4>
-                                    <p><a href="mailto:info@see-energy.co.uk" style="color: white;">info@see-energy.co.uk</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="contact-box">
-                                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                <div class="contact-details">
-                                    <h4 class="pre-footer-title">CONNECT WITH US</h4>
-                                    <p><a href="https://www.linkedin.com/company/see-energy/" style="color: white;" target="_blank">Follow us on LinkedIn</a></p>
-                                </div>
-                            </div>
-                        </div>
+        <footer class="see-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <h4>Simplify Energy Economics</h4>
+                        <p class="blurb">Simplify Energy Economics (SEE), a company registered in Scotland U.K., provides expert analytical and advisory support across the energy sector. For more details follow us on LinkedIn.</p>
                     </div>
-
-                    <!-- Footer widgets -->
-                    <div class="row widgets">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="about-txt widget">
-                                <!-- Comment: Need SEE footer logo -->
-                                <img src="favicon/footer-logo.png" alt="SEE Logo" />
-
-                                <p>Simplify Energy Economics (SEE), a company registered in Scotland U.K., provides expert analytical and advisory support across the energy sector. Our services span from economic evaluation and risk modeling to strategic planning and market research, serving both conventional and renewable energy domains.</p>
-
-                                <div class="widgets-social">
-                                    <a href="https://www.linkedin.com/company/see-energy/" style="color: white;" target="_blank"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="quick-links widget">
-                                <h2 class="widget-title">QUICK LINKS</h2>
-                                <ul>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                    <li><a href="terms-of-service.html">Terms of Service</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-services widget">
-                                <h2 class="widget-title">OUR EXPERTISE</h2>
-                                <ul>
-                                    <li><a href="#">Economic Evaluation & Modeling</a></li>
-                                    <li><a href="#">Risk Modeling & Analysis</a></li>
-                                    <li><a href="#">M&A Advisory Services</a></li>
-                                    <li><a href="#">Strategic Planning</a></li>
-                                    <li><a href="#">Energy Transition Solutions</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Quick Links</h4>
+                        <ul class="links">
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="expertise.html">Our Expertise</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 connect">
+                        <h4>Connect</h4>
+                        <p><i class="fa fa-envelope-o"></i>&nbsp; <a href="mailto:info@see-energy.co.uk">info@see-energy.co.uk</a></p>
+                        <p><i class="fa fa-map-marker"></i>&nbsp; Scotland, United Kingdom</p>
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <h4>Follow us</h4>
+                        <ul class="social-icons">
+                            <li><a href="https://www.linkedin.com/company/see-energy/" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-
-            <!-- Copyright -->
-            <div class="copyright">
+            <div class="see-copyright">
                 <div class="container">
-                    <div class="row copyright-bar">
-                        <div class="col-md-6">
-                            <p style="color: white;">Copyright © 2024 SEE. All rights reserved.</p>
-                        </div>
-                        <div class="col-md-6 text-right">
-                            <p ><a href="terms-of-service.html" style="color: white;">Terms of Service</a> <a href="privacy-policy.html" style="color: white;" >Privacy Policy</a></p>
-                        </div>
-                    </div>
+                    <span>&copy; 2026 SEE. All Rights Reserved.</span>
+                    <span>
+                        <a href="terms-of-service.html">Terms of Service</a> &nbsp;&middot;&nbsp;
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                    </span>
                 </div>
             </div>
         </footer>
-
-
-        <!-- back-to-top link -->
-        <a href="#0" class="cd-top">Top</a>
     </div>
-
-    <!-- JavaScript imports remain the same except remove map-related scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/back-to-top.js"></script>
-    <script src="js/main.js"></script>
-
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "Privacy Policy",
-          "description": "SEE's privacy policy for energy sector consulting services.",
-          "publisher": {
-            "@type": "Organization",
-            "name": "SEE",
-            "url": "https://see-energy.co.uk"
-          },
-          "inLanguage": "en-GB",
-          "dateModified": "2024-11-11"
-        }
-        </script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
