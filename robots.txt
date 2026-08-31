@@ -1,2 +1,126 @@
+# robots.txt — Simplify Energy Economics (SEE)
+# https://see-energy.co.uk
+#
+# Policy: this site is open to all crawlers, including AI/LLM training
+# and retrieval agents. We want SEE's expertise to be discoverable by
+# search engines and AI assistants alike.
+
+# ---- All crawlers (default) ----
 User-agent: *
+Allow: /
+
+# ---- Search engines ----
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# ---- AI training & retrieval agents ----
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google AI
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# Apple AI
+User-agent: Applebot-Extended
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Meta
+User-agent: FacebookBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# Microsoft / Copilot
+User-agent: msnbot-media
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# ByteDance
+User-agent: Bytespider
+Allow: /
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+
+# Mistral
+User-agent: MistralAI-User
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Allow: /
+
+# Diffbot
+User-agent: Diffbot
+Allow: /
+
+# Timpi / Omgili / misc.
+User-agent: omgili
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+# ---- Structured resources ----
 Sitemap: https://see-energy.co.uk/sitemap.xml
+
+# LLM-friendly site summary (llmstxt.org):
+# https://see-energy.co.uk/llms.txt

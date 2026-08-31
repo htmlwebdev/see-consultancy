@@ -5,30 +5,46 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-
 <url>
   <loc>https://see-energy.co.uk/</loc>
-  <lastmod>2024-11-24T16:35:50+00:00</lastmod>
+  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://see-energy.co.uk/about.html</loc>
-  <lastmod>2024-11-24T16:35:50+00:00</lastmod>
+  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://see-energy.co.uk/services.html</loc>
-  <lastmod>2024-11-24T16:35:50+00:00</lastmod>
+  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://see-energy.co.uk/expertise.html</loc>
-  <lastmod>2024-11-24T16:35:50+00:00</lastmod>
+  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://see-energy.co.uk/contact.html</loc>
-  <lastmod>2024-11-24T16:35:50+00:00</lastmod>
+  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://see-energy.co.uk/privacy-policy.html</loc>
+  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.30</priority>
+</url>
+<url>
+  <loc>https://see-energy.co.uk/terms-of-service.html</loc>
+  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.30</priority>
 </url>
 </urlset>

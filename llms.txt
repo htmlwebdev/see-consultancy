@@ -1,0 +1,70 @@
+# Simplify Energy Economics (SEE)
+
+> Simplify Energy Economics (SEE) is a Scotland-based energy consultancy providing end-to-end analytical, commercial and strategic advisory and training services across the entire energy value chain. With over 40 years of combined experience in the team, SEE serves energy developers, trading firms, utilities, investors, lenders, EPC contractors and public-sector stakeholders across both conventional hydrocarbons and the energy transition.
+
+SEE's work spans upstream, midstream and downstream oil & gas, LNG and gas markets, power and renewable energy systems, and energy-transition investments. The firm combines quantitative modelling, market intelligence and practical execution knowledge to translate complex technical and economic analysis into decisions clients can act on.
+
+- **Website:** https://see-energy.co.uk
+- **Contact:** info@see-energy.co.uk (responses within one business day)
+- **LinkedIn:** https://www.linkedin.com/company/see-energy/
+- **Location:** Scotland, United Kingdom — serving clients globally
+
+## Core pages
+
+- [Home](https://see-energy.co.uk/): Overview of SEE — bridging industry experience with advanced analytics across consultancy and training.
+- [About](https://see-energy.co.uk/about.html): Company story, the people behind SEE, client base and analytical approach.
+- [Services](https://see-energy.co.uk/services.html): Full catalogue of consultancy and training offerings, delivered online, onsite or hybrid.
+- [Expertise](https://see-energy.co.uk/expertise.html): Nine deep-expertise pillars described in technical detail.
+- [Contact](https://see-energy.co.uk/contact.html): Enquiry form and direct contact details.
+
+## Expertise pillars
+
+1. **Oil & Gas Fiscal Modelling & Energy Economics** — production sharing contracts (PSC) and joint venture (JV) frameworks, upstream petroleum economics.
+2. **Renewable Energy & Power Markets** — LCOE, LCOS, battery energy storage (BESS), solar and wind financial models, power market dispatch analysis.
+3. **Financial Modelling & Investment Analysis** — DCF, APV and WACC methodologies.
+4. **Project Finance & Debt Structuring** — DSCR and LLCR analysis across LNG, power and renewables.
+5. **Market Research & Price Forecasting** — Brent, JKM and Henry Hub price outlooks.
+6. **M&A Strategy & Commercial Advisory** — transaction strategy and commercial structuring.
+7. **Data Analytics, Forecasting & Digital Optimisation** — machine-learning forecasting and digital optimisation.
+8. **Trading, Risk Management & Derivatives** — Value at Risk (VaR) and Monte Carlo simulation.
+9. **Executive Training & Capability Building** — tailored corporate and executive programmes.
+
+## Consultancy services
+
+- Investment Analysis & Valuation
+- Project Economics & Financial Modeling
+- Risk Analysis & Sensitivity Assessment
+- Transaction Support & Due Diligence
+- Deal Structuring & Commercial Advisory
+- Portfolio Services & Optimization
+- Asset Optimization & Performance Analysis
+- Trading Advisory & Market Execution
+- Data Analytics & Decision Support
+- Market Research, Analysis & Forecasting
+- Strategy Development & Growth Planning
+- Market Entry & Expansion Strategy
+
+## Training services
+
+- Applied Energy Economics & Financial Modeling
+- Real Industry Case Studies
+- Energy Markets, Trading & Hedging Workshops
+- Portfolio Optimisation & Investment Strategy
+- Tailored Corporate & Executive Training
+- Practical Learning & Capability Building
+
+## Team
+
+- **Santosh Singh** — Director & Principal Economist. More than two decades across upstream oil & gas, LNG, renewables, hydrogen and carbon capture, combining senior commercial and financial leadership with hands-on financial modelling, valuation, project economics, M&A, capital allocation and investment appraisal. Also CEO and Founder of Geoenergetix / Apta Consulting. https://www.linkedin.com/in/santoshsingh1/
+- **Dilip Jena** — Energy Economist & CEPMLP Lecturer. Specialises in the electricity and energy sectors of the UK, Europe and USA; lecturer in Energy Economics at the University of Dundee's Centre for Energy, Petroleum and Mineral Law and Policy. Former senior consultant at PwC India. https://uk.linkedin.com/in/dilip-jena-fhea-32110319
+- **Vikas Kooneti** — Senior Analyst. Economic and financial modelling across solar, wind, biomass and hydrogen, plus project finance. Master's degrees from Bayes Business School (Energy Trade & Finance) and the University of Aberdeen (Energy Economics & Finance). https://in.linkedin.com/in/vikas-kooneti
+
+## Optional
+
+- [Privacy Policy](https://see-energy.co.uk/privacy-policy.html): How SEE collects, uses and protects personal data under UK law.
+- [Terms of Service](https://see-energy.co.uk/terms-of-service.html): Terms governing use of SEE's services and website, governed by the laws of Scotland.
+- [Sitemap](https://see-energy.co.uk/sitemap.xml): Machine-readable index of all public pages.
+
+## Usage
+
+This site is open to AI crawlers, assistants and retrieval agents. Content may be indexed, summarised and cited. Please attribute to Simplify Energy Economics (SEE) and link to https://see-energy.co.uk. For enquiries, direct users to info@see-energy.co.uk.
